@@ -1,16 +1,15 @@
 <html>
 <head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/paho-mqtt.js"></script>
-<script>
-console.log("ssssssssss");
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/paho-mqtt.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 hello1
 <script>
 
 // Create a client instance
-client = new Paho.MQTT.Client("test.mosquitto.org", Number(8080), "clientId");
+var client = new Paho.MQTT.Client("test.mosquitto.org", Number(8080), "clientId534534535");
+//var client = new Paho.MQTT.Client(wsbroker, wsport, "myclientid_" + parseInt(Math.random() * 100, 10));
+
 
 // set callback handlers
 client.onConnectionLost = onConnectionLost;
