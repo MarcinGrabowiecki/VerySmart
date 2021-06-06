@@ -1,10 +1,13 @@
 <html>
 <head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/paho-mqtt.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
 hello1
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/paho-mqtt.js" type="text/javascript" charset="utf-8"></script>
 <script>
+
+document.write(Paho.MQTT)
 
 // Create a client instance
 var client = new Paho.MQTT.Client("test.mosquitto.org", Number(8080), "clientId534534535");
